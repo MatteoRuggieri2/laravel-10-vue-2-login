@@ -23,7 +23,6 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
-        dd('Dashboard Admin');
-        // return view('home');
+        return view('home');
     }
 }
