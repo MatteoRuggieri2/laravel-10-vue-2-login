@@ -10,6 +10,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/front.js'])
 </head>
 <body>
+    @include('components.dashboardbtn')
     <div id="root"></div>
 </body>
 </html>
