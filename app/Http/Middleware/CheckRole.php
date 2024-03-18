@@ -22,6 +22,6 @@ class CheckRole
         }
 
         // Reindirizza se l'utente non ha il ruolo richiesto
-        return redirect('/');
+        return redirect(route('guest.home'));
     }
 }
