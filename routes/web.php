@@ -24,5 +24,5 @@ Route::middleware(['auth', 'check.role:1'])
     });
 
 Route::get('{any?}', function() {
-    return view('guests.home');
+    return view('guests.home', ['current_user' => Auth::user()]);
 })->where('any', '.*')->name('guest.home');
