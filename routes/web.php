@@ -25,4 +25,4 @@ Route::middleware(['auth', 'check.role:1'])
 
 Route::get('{any?}', function() {
     return view('guests.home');
-})->where('any', '.*');
+})->where('any', '.*')->name('guest.home');
